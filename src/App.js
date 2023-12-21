@@ -1,8 +1,9 @@
 import Pages from "./pages/Pages";
+import Catogaries from "./components/Catogaries";
 function App() {
   return (
     <div className="App">
-      <h1>Hello react</h1>
+      <Catogaries />
       <Pages />
     </div>
   );
