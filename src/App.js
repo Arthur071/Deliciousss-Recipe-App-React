@@ -1,6 +1,6 @@
 import Pages from "./pages/Pages";
 import Catogaries from "./components/Catogaries";
-import {BrowserRouter} from 'react-router-dom';
+import {HashRouter} from 'react-router-dom';
 import Search from "./components/Search";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
@@ -10,7 +10,7 @@ import { GiKnifeFork } from "react-icons/gi";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter>
       <Nav>
         <GiKnifeFork />
         <Logo to={'/'}>Delicioussss</Logo>
@@ -18,7 +18,7 @@ function App() {
       <Search />
       <Catogaries />
       <Pages />
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
